@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../resources/css/addTender.css">
+    <link rel="stylesheet" href="../resources/css/profil1.css">
+    <title>Tender əlavə et</title>
+</head>
+
+<body>
+    <section id="header">
+        <div class="container">
+            <div class="row">
+                <nav>
+                    <a href="index.html"> <img src="../resources/img/tenders 1.png" alt="">
+                    </a>
+                    <ul class="nav-ul" id="nav-ul">
+                        <li class="addTender">
+                            <button type="button" class="btn _btn"><i class="far fa-plus"></i> Tender əlavə et</button>
+                        </li>
+                        <li class="notifications">
+                            <div class="row">
+                                <button type="button" class="btn popoverBtn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="lorem ipsum ">
+                                    <i class="far fa-bell fa-2x"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="profil">
+                            <div class="dropdown">
+                                <button style="padding: 0;" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="../resources/img/profil.svg" alt="">
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="profil1.html">Profil</a></li>
+                                    <li><a class="dropdown-item" href="edit-profile.html">Parametrlər</a></li>
+                                    <li><a class="dropdown-item" href="#">Premium ol</a></li>
+                                    <li>
+                                        <button class="dropdown-item"><i class="fas fa-sign-out"></i> Çıxış et</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="nav2">
+                    <ul class="nav-list">
+                        <li class="nav-item1">
+                            <div class="dropdown">
+                                <button style="padding: 0;" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="../resources/img/profil.svg" alt="">
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="profil1.html">Profil</a></li>
+                                    <li><a class="dropdown-item" href="edit-profile.html">Parametrlər</a></li>
+                                    <li><a class="dropdown-item" href="#">Premium ol</a></li>
+                                    <li>
+                                        <button class="dropdown-item"><i class="fas fa-sign-out"></i> Çıxış et</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item2">
+                            <a href="../html/index.html" class="_logo"><img src="../resources/img/tenders 1.png" alt=""></a>
+                        </li>
+                        <li class="nav-item3">
+                            <div class="row">
+                                <button type="button" class="btn popoverBtn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Lorem ipsum">
+                                    <i class="far fa-bell fa-2x"></i>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="fixed-btn">
+                    <button type="button" class="btn _btn"><i class="far fa-plus fa-2x"></i></button>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section id="button">
+        <div class="container">
+            <div class="row mt-6">
+                <div class=" btnDiv col-lg-12 col-md-12 col-sm-12 col-12">
+                    <!-- <div class="btn-group " role="group" aria-label="First group">
+                        <button type="button" class="btn  show-btn" data-open="content1">Məhsul</button>
+                        <button type="button" class="btn  show-btn" data-open="content2">Xidmət</button>
+                    </div> -->
+                    <div class="btn-group btn___" role="group" aria-label="First group">
+                        <div class="btn-group button_ " style="border: none;">
+                            <input type="radio" class="btnn  show-btn" data-open="content1" id="a25" name="check-substitution-2" />
+                            <label class="btn btn-default" for="a25">Məhsul</label>
+                        </div>
+                        <div class="btn-group button_" style="border: none;">
+                            <input type="radio" id="a50" class="btnn  show-btn" data-open="content2" name="check-substitution-2" />
+                            <label class="btn btn-default" for="a50">Xidmət </label>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="content mt-6" id="content1">
+        <section id="addTender">
+            <div class="container">
+                <div class="row mt-6">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 _col">
+                        <h4>Hansı sahə üzrə alış etmək istəyirsiniz? </h4>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Axtarış etmək istədiyiniz sahəni seçin
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Axtarış etmək istədiyiniz sahə</a></li>
+                                <li><a class="dropdown-item" href="#">Axtarış etmək istədiyiniz sahə</a></li>
+                                <li><a class="dropdown-item" href="#">Axtarış etmək istədiyiniz sahə</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-6">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 _col">
+                        <h4>Hansı kategqoriya üzrə alış etmək istəyirsiniz? </h4>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Axtarış etmək istədiyiniz kateqoriyanı seçin
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Axtarış etmək istədiyiniz kateqoriya</a></li>
+                                <li><a class="dropdown-item" href="#">Axtarış etmək istədiyiniz kateqoriya</a></li>
+                                <li><a class="dropdown-item" href="#">Axtarış etmək istədiyiniz kateqoriya</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-6">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <h4>Məhsul / Xidmət haqqında məlumat </h4>
+                        <div class="inputs">
+                            Məhsul 1
+                            <input type="text" class="form-control" placeholder="Məhsul adı" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                            <input type="text" class="form-control" placeholder="Brand/Marka" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                            <small>Məcburi deyil</small>
+                            <input type="number" class="form-control" placeholder="Miqdar" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                            <input type="text" class="form-control" placeholder="Məhsul təsviri" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                            <small>Məcburi deyil</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-6">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h4>Çatdırılma üsulunu seçin</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Ünvana çatdırılma                        </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Özüm götürəcəm
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-6">
+                    <h4>
+                        Təhvil tarixi
+                    </h4>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                        <input type="date" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                        <input type="time" class="form-control" placeholder="16:00" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                </div>
+                <div class="row mt-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <h4>Ümumi büdcə</h4>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Büdcənizi daxil edin" aria-label="Text input with dropdown button">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">AZN</button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">AZN</a></li>
+                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                <li><a class="dropdown-item" href="#">EURO</a></li>
+                                <li><a class="dropdown-item" href="#">TRY</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-6">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <h4>Tender növü</h4>
+                        <div class="tenderType">
+                            <h5>Standart </h5>&nbsp;
+                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>&nbsp;
+                            <span>Pulsuz</span>
+                        </div>
+                        <br>
+                        <div class="tenderType">
+                            <h5>Premium </h5>&nbsp;
+                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>&nbsp;
+                            <span>5.00₼</span>
+                        </div>
+                        <br>
+                        <div class="addpic">
+                            <a href=""><i class="fal fa-image fa-2x"></i>&nbsp; Şəkil əlavə et</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-6">
+                    <br>
+                    <div class="col-lg-6">
+                        <button type="button" class="btn2">Tenderi yerləşdir</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <div class="content mt-6" id="content2" style="display: none;">
+        <section id="addTender">
+            <div class="container">
+                <div class="row mt-6">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <h4>Başlıq</h4>
+                        <div class="inputs">
+                            Xidmət
+                            <input type="text" class="form-control" placeholder="Nə etmək lazımdır?" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                            <input type="text" class="form-control" placeholder="Bacarıqlar" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                            <small>Məcburi deyil</small>
+                            <div class="dropdown mt-4">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    İxtisas <i class="fas fa-angle-down"></i>
+                                </button>
+                                <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">İxtisas</a></li>
+                                    <li><a class="dropdown-item" href="#"> İxtisas</a></li>
+                                    <li><a class="dropdown-item" href="#">İxtisas</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown mt-4">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Təsvir <i class="fas fa-angle-down"></i>                               
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Təsvir</a></li>
+                                    <li><a class="dropdown-item" href="#"> Təsvir</a></li>
+                                    <li><a class="dropdown-item" href="#">Təsvir</a></li>
+                                </ul>
+                            </div>
+                            <input type="text" class="form-control pb-5" placeholder="Təsvir" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                            <small>Məcburi deyil</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-6">
+                    <h4>
+                        Tarix
+                    </h4>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                        <input type="date" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                        <input type="time" class="form-control" placeholder="16:00" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    </div>
+                </div>
+                <div class="row mt-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <h4>Ümumi büdcə</h4>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Büdcənizi daxil edin" aria-label="Text input with dropdown button">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">AZN</button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">AZN</a></li>
+                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                <li><a class="dropdown-item" href="#">EURO</a></li>
+                                <li><a class="dropdown-item" href="#">TRY</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-6">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <h4>Tender növü</h4>
+                        <div class="tenderType">
+                            <h5>Standart </h5>&nbsp;
+                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>&nbsp;
+                            <span>Pulsuz</span>
+                        </div>
+                        <br>
+                        <div class="tenderType">
+                            <h5>Premium </h5>&nbsp;
+                            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>&nbsp;
+                            <span>5.00₼</span>
+                        </div>
+                        <br>
+                        <div class="addpic">
+                            <a href=""><i class="fal fa-image fa-2x"></i>&nbsp; Şəkil əlavə et</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-6">
+                    <br>
+                    <div class="col-lg-6">
+                        <button type="button" class="btn2">Tenderi yerləşdir</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <section id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4 item">
+                    <h1>Bizi izləyin</h1>
+                    <a href="" class=""><img src="../resources/img/linkedin-icon-2.svg" alt=""></a>
+                    <a href="" class=""><img src="../resources/img/instagram-2-1.svg" alt=""></a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4 item logo">
+                    <img src="../resources/img/logo_footer.svg" alt="">
+                    <div>
+                        <small>Povered by Deirvlon Technologies</small>
+
+                    </div>
+                    <div>
+                        <a href="#">www.deirvlon.com</a>
+
+                    </div>
+                    <div>
+                        <small> Copyright © 2021 Deirvlon Technologies. All rights are reserved.</small>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4 item">
+                    <h1>
+                        Bizimlə əlaqə
+                    </h1>
+                    <small>
+                        <a href="mailto:salam@deirvlon.com">salam@deirvlon.com</a>
+                        <p><a href="tel:+994 55 639 49 54">+994 55 639 49 54</a></p>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+    <script src="../resources/js/tender.js"></script>
+    <script src="../resources/js/popover.js"></script>
+
+</body>
+
+</html>

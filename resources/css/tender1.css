@@ -1,0 +1,297 @@
+:root {
+    --gradient: linear-gradient(90deg, #FB6263 -23.2%, #D22BA9 29.25%, #A227DC 84.3%, #7E58F1 122.53%);
+    --color: rgba(66, 0, 255, 1);
+    --color2: rgba(0, 0, 0, 1);
+    --color3: rgba(162, 39, 220, 1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, hsla(321, 53%, 93%, 1) 0%, hsla(264, 100%, 93%, 1) 100%);
+}
+
+.mt-6 {
+    margin-top: 50px;
+}
+
+
+/* HEADER START */
+
+
+/* NAV 1 */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-ul.show {
+    margin-top: 5%;
+}
+
+.nav-ul.show li {
+    margin-top: 3%;
+}
+
+.nav-ul li {
+    margin: 0 15px;
+}
+
+.nav-ul li a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.addTender ._btn {
+    padding: 10px 30px;
+    box-shadow: none;
+    border-radius: 12px;
+    color: #fff;
+    background: var(--gradient);
+}
+
+
+/* NAV 2 */
+
+.nav2 {
+    display: none;
+}
+
+nav .nav-list {
+    padding: 0 !important;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav .nav-list .nav-item3 img {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+nav .nav-list .nav-item1 img {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.fixed-btn {
+    display: none;
+}
+
+.fixed-btn button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--gradient);
+    color: #fff;
+    width: 80px;
+    height: auto;
+}
+
+.fixed-btn button i .fa-plus {
+    width: 50px;
+    height: 50px;
+}
+
+.container .row .popoverBtn:focus {
+    box-shadow: none;
+}
+
+.popover-body {
+    width: 400px;
+    height: 200px;
+}
+
+
+/* NAV 2 */
+
+
+/* NOTIFICATION  */
+
+
+/* PROFIL LIST ITEM  */
+
+.profil img {
+    width: 30px;
+    height: auto;
+}
+
+.profil .profilName {
+    display: inline-block;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+
+/* HEADER END */
+
+
+/* TENDER CONTENT START */
+
+#tender-content .modal-content {
+    background: linear-gradient(90deg, hsla(321, 53%, 93%, 1) 0%, hsla(264, 100%, 93%, 1) 100%);
+}
+
+#tender-content .modal-body {
+    padding: 0 40px;
+}
+
+#tender-content h2 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#tender-content .modal h2 {
+    font-size: 17px;
+}
+
+#tender-content p {
+    opacity: 70%;
+    font-size: 18px;
+}
+
+#tender-content .modal p {
+    font-size: 14px;
+}
+
+#tender-content h5 {
+    font-weight: 600;
+}
+
+#tender-content .modal h5 {
+    font-size: 15px;
+}
+
+#tender-content .modal i {
+    margin-left: 5px;
+}
+
+#tender-content .modal input {
+    background-color: transparent;
+    width: 170px;
+    height: 40px;
+    border-radius: 6px;
+    box-shadow: none;
+}
+
+#tender-content ._btn {
+    margin-bottom: 40px;
+    padding: 10px 60px;
+    border: 0;
+    border-radius: 12px;
+    color: white;
+    background: var(--gradient);
+    box-shadow: none !important;
+}
+
+#tender-content .btn-close {
+    margin-left: 90%;
+    margin-top: 3%;
+}
+
+
+/* TENDER CONTENT END */
+
+
+/* FOOTER  START*/
+
+#footer {
+    margin-top: 250px;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, hsla(322, 63%, 62%, 1) 0%, hsla(275, 69%, 63%, 1) 100%);
+}
+
+#footer a img {
+    height: 30px;
+    width: 30px;
+    left: 0px;
+    padding: 0 1%;
+}
+
+#footer h1 {
+    padding-top: 10%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#footer .item {
+    padding: 0 1%;
+    margin: 4% 0;
+    text-align: center;
+    color: white;
+}
+
+#footer .logo img {
+    margin-bottom: 3%;
+}
+
+#footer .item div {
+    margin-bottom: 1%;
+}
+
+#footer .item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* FOOTER END */
+
+@media (max-width:991px) {
+    ._logo img {
+        width: 200px;
+    }
+    nav {
+        display: none;
+    }
+    .nav2 {
+        display: block;
+    }
+    .container .row .popoverBtn i {
+        margin-top: 20px;
+    }
+    .fixed-btn {
+        display: block;
+    }
+    #tender-content h2 {
+        font-size: 20px;
+    }
+    #tender-content p {
+        font-size: 14px;
+    }
+    #tender-content p br {
+        display: none;
+    }
+    .mt-6 {
+        margin-top: 30px;
+    }
+    #footer .item small {
+        font-size: 11px;
+    }
+    #footer .item a {
+        font-size: 10px;
+    }
+    #footer h1 {
+        font-size: 22px;
+    }
+    #footer a img {
+        height: 22px;
+        width: 22px;
+    }
+}

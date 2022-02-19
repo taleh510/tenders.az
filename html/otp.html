@@ -1,0 +1,117 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>Profili təsdiqlə</title>
+    <style>
+         :root {
+            --gradient: linear-gradient(90deg, #FB6263 -23.2%, #D22BA9 29.25%, #A227DC 84.3%, #7E58F1 122.53%);
+        }
+        
+        .bgWhite {
+            background: white;
+            box-shadow: 0px 3px 6px 0px #cacaca;
+        }
+        
+        .title {
+            font-weight: 600;
+            margin-top: 20px;
+            font-size: 24px
+        }
+        
+        .customBtn {
+            border-radius: 8px;
+            padding: 10px 60px;
+            background: var(--gradient);
+            color: #fff;
+        }
+        
+        .customBtn:hover {
+            color: #fff;
+        }
+        
+        form input {
+            outline: none;
+            border: 1px solid #c42ab9;
+            border-radius: 5px;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+        
+        #OTP {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="OTP">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <img src="../resources/img/tenders 1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-4 text-center">
+                <div class="row">
+                    <div class="col-sm-12 mt-5 bgWhite">
+                        <div class="title">
+                            Təsdiqləmə kodu
+                        </div>
+
+                        <form action="" class="mt-5">
+                            <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(1)' maxlength=1>
+                            <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(2)' maxlength=1>
+                            <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(3)' maxlength=1>
+                            <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(4)' maxlength=1>
+                        </form>
+                        <!-- <hr class="mt-4"> -->
+                        <button class='btn btn-block mt-4 mb-4 customBtn'>Təsdiqlə</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let digitValidate = function(ele) {
+            console.log(ele.value);
+            ele.value = ele.value.replace(/[^0-9]/g, '');
+        }
+
+        let tabChange = function(val) {
+            let ele = document.querySelectorAll('input');
+            if (ele[val - 1].value != '') {
+                ele[val].focus()
+            } else if (ele[val - 1].value == '') {
+                ele[val - 2].focus()
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../resources/js/tender.js"></script>
+
+</body>
+
+</html>

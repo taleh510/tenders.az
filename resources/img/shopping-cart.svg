@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43.235" height="38" viewBox="0 0 43.235 38">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="prefix__shopping-cart">
+        <path id="prefix__Path_31" d="M13.93 25.334H36.9a1.267 1.267 0 0 0 1.218-.919l5.069-17.734a1.267 1.267 0 0 0-1.218-1.615h-30.96L10.1.992A1.267 1.267 0 0 0 8.867 0h-7.6a1.267 1.267 0 0 0 0 2.533h6.584l4.573 20.58a3.8 3.8 0 0 0 1.509 7.287H36.9a1.267 1.267 0 0 0 0-2.533H13.933a1.267 1.267 0 0 1 0-2.533zM40.289 7.6l-4.343 15.2h-21L11.571 7.6zm0 0" class="prefix__cls-1" data-name="Path 31"/>
+        <path id="prefix__Path_32" d="M150 363.8a3.8 3.8 0 1 0 3.8-3.8 3.8 3.8 0 0 0-3.8 3.8zm3.8-1.267a1.267 1.267 0 1 1-1.267 1.267 1.268 1.268 0 0 1 1.267-1.267zm0 0" class="prefix__cls-1" data-name="Path 32" transform="translate(-137.334 -329.6)"/>
+        <path id="prefix__Path_33" d="M362 363.8a3.8 3.8 0 1 0 3.8-3.8 3.8 3.8 0 0 0-3.8 3.8zm3.8-1.267a1.267 1.267 0 1 1-1.267 1.267 1.268 1.268 0 0 1 1.267-1.267zm0 0" class="prefix__cls-1" data-name="Path 33" transform="translate(-331.431 -329.6)"/>
+    </g>
+</svg>

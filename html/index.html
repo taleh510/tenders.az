@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>Tenders.az</title>
+</head>
+
+<body>
+    <section id="header">
+        <div class="container">
+            <div class="row">
+                <nav>
+                    <a href="" class="_logo"> <img src="../resources/img/tenders 1.png" alt="">
+                    </a>
+                    <button class="hamburger" id="hamburger">
+                        <i class="fal fa-bars"></i>
+                    </button>
+                    <ul class="nav-ul" id="nav-ul">
+                        <li>
+                            <a href="#why">Niyə biz?</a>
+                        </li>
+                        <li>
+                            <a href="#counter">Statistika</a>
+                        </li>
+                        <li>
+                            <a href="#video">Necə işləyir?</a>
+                        </li>
+                        <li>
+                            <a href="#faq">FAQ</a>
+                        </li>
+                        <li><button data-bs-target="#tenders" onclick="location.href = 'homepg.html'" class="tender">Tendere bax</button></li>
+                        <li class="regs">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn _btn" data-bs-toggle="modal" data-bs-target="#regs">Qeydiyyat</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="regs" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <div class="modal-header">
+                                            <h1>Qeydiyyat</h1>
+                                        </div>
+                                        <div class="btns-diff">
+                                            <button onclick="toggleDisable('inputcompany')">
+                                                Fiziki Şəxs 
+                                            </button>
+                                            <button onclick="toggleEnable('inputcompany')">
+                                                Şirkət
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="formGroup">
+                                                <input type="text" name="name" id="inputcompany" class="form-control" placeholder="Şirkətin adı" aria-label="Disabled input example" disabled>
+                                            </div>
+                                            <div class="formGroup">
+                                                <input type="text" name="name" class="form-control" placeholder="Ad Soyadınız">
+                                            </div>
+                                            <div class="formGroup"> <input type="email" name="mail" class="form-control" placeholder="E-poçt">
+                                            </div>
+                                            <div class="formGroup"> <input type="password" name="password" class="form-control" placeholder="Şifrə">
+                                            </div>
+                                            <div class="formGroup">
+                                                <input type="password" name="password" class="form-control" placeholder="Şifrəni təkrar daxil edin">
+
+                                            </div>
+                                            <div class="formGroup">
+                                                <input type="tel" name="phone" pattern="[0-9+]*" class="form-control" placeholder=" Əlaqə nömrəniz">
+
+                                            </div>
+                                            <div class="formGroup-checkbox">
+                                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                                <label class="form-check-label" for="invalidCheck">  Mən <a href="">Şərtlər və qaydalar</a> ilə razılaşıram</label>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn" onclick="location.href = 'otp.html'">Qeydiyyat</button>
+                                        </div>
+                                        <div class="sign-in">
+                                            <p>Profiliniz var? <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#signIn">Daxil Ol</button> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="signIn">
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#signIn">Daxil Ol</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="signIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <div class="modal-header">
+                                            <h1>Daxil ol</h1>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="formGroup"> <input type="email" name="mail" class="form-control" placeholder="E-poçt">
+                                            </div>
+                                            <div class="formGroup"> <input type="password" name="password" class="form-control" placeholder="Şifrə">
+                                            </div>
+                                            <a href="forgot_password.html">Şifrəni unutmusunuz?</a>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" onclick="location.href = 'tenders.html'" class="btn">Daxil ol</button>
+                                        </div>
+                                        <div class="sign-in">
+                                            <p>Profiliniz yoxdur? <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#regs"> Qeydiyyatdan kecin</button></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section id="header-bottom">
+        <div class="container">
+            <div class="row  mt-6">
+                <h2>Rəqəmsal satınalma və tender proqramı</h2>
+                <p>Tender.az – hər hansı bir işin, xidmətin ən səmərəli üsul və aşağı xərclə yerinə yetirilməsi üçün <br> iddiaçılar arasından birinin və ya bir neçəsinin seçilərək həmin işin (xidmətin) müqavilə əsasında <br> ona (onlara) həvalə edilməsi
+                    məqsədilə keçirilən müsabiqədir. İstehsal, alqı- satqı, barter, <br> lahiyələşdirmə, tikinti, təmir, bərpa, nəqliyyat daşımaları, faydalı qazıntı yataqlarının işlənməsi və yer <br> təkindən istifadə, təbiətin mühafizəsi, xidmət göstərilməsi,
+                    icarə və digər məsələlərlə bağlı hər cür iş <br> (xidmət) tender predmeti ola bilər. </p>
+            </div>
+    </section>
+    <section id="counter">
+        <div class="container">
+            <div class="row mt-6">
+                <div class="counter ">
+                    <div class="item">
+                        <p class="text">Tender sayı</p>
+                        <p id="number1" class="number">0</p>
+                        <hr>
+                    </div>
+                    <div class="item">
+                        <p class="text">Təqdimatçıların sayı</p>
+                        <p id="number2" class="number">0</p>
+                        <hr>
+                    </div>
+                    <div class="item">
+                        <p class="text">Satınalma dəyəri</p>
+                        <p id="number3" class="number">0</p>
+                        <hr>
+                    </div>
+                    <div class="item">
+                        <p class="text">Ümumi təklif dəyəri</p>
+                        <p id="number4" class="number">0</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="why">
+        <div class="container">
+            <div class="row mt-6">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 ">
+                    <h2>Niyə Tender.az?</h2>
+                    <div class="content1">
+                        <img src="../resources/img/hourglass.svg" alt="">
+                        <h5>
+                            Vaxta qənaət
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna <br> aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                    <div class="content2">
+                        <img src="../resources/img/money.svg" alt="">
+                        <h5>
+                            Pulunuza qənaət
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna <br> aliqua. Ut enim ad minim veniam</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <img src="../resources/img/content1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="partners">
+        <div class="container">
+            <div class="row mt-6">
+                <h2>
+                    Bizi seçən müştərilər
+                </h2>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    ss
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="why2">
+        <div class="container">
+            <div class="row mt-6">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <img src="../resources/img/content2.png" alt="">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 px-3 ">
+                    <div style="margin-top: 5%;">
+                        <h2>Nəticənizi ən qısa müddətdə <br>əldə edin</h2>
+                        <p class="why2p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <!-- <hr> -->
+                    </div>
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+
+                    </div>
+                    <br>
+                    <div class="rate-content">
+                        <p> Tender.az ipsum dolor sit amet,<br> consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et <br> dolore magna aliqua. Ut enim ad minim <br> veniam
+                        </p>
+                        <br>
+                        <img src="../resources/img/Ellipse 7.png" alt="">
+                        <p>Ad Soyad</p>
+                        <small>NEF Satınalma Müdürü 2016 - 2018</small>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="video">
+        <div class="container">
+            <div class="row mt-6">
+                <div class="col-lg-12">
+                    <h2>Necə işləyir?</h2>
+                    <iframe src="https://www.youtube.com/embed/UnT12G8VQAI" frameborder="0" width="100%" height="500px"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq">
+        <div class="container">
+            <div class="row mt-6">
+                <h2>FAQ</h2>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Niyə tender.az?
+                            </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eum ab rerum illo accusamus voluptatum temporibus facilis soluta, repellendus quos!</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Platformaya kimlər qoşula bilər?
+                            </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eum ab rerum illo accusamus voluptatum temporibus facilis soluta, repellendus quos!</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Qeydiyyat üçün nə lazımdır?
+                            </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eum ab rerum illo accusamus voluptatum temporibus facilis soluta, repellendus quos!</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-heading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse5">
+                                    Məhsulumuzu satmaq üçün elan
+                                    yerləşdirə bilərik?
+                            </button>
+                            </h2>
+                            <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eum ab rerum illo accusamus voluptatum temporibus facilis soluta, repellendus quos!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="accordion accordion-flush" id="accordionFlushExample2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-heading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                                    Niyə tender.az?
+                            </button>
+                            </h2>
+                            <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample2">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eum ab rerum illo accusamus voluptatum temporibus facilis soluta, repellendus quos!</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-heading6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse7">
+                                    Platformaya kimlər qoşula bilər?
+                            </button>
+                            </h2>
+                            <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample2">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eum ab rerum illo accusamus voluptatum temporibus facilis soluta, repellendus quos!</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-heading7">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+                                    Qeydiyyat üçün nə lazımdır?
+                            </button>
+                            </h2>
+                            <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7" data-bs-parent="#accordionFlushExample2">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eum ab rerum illo accusamus voluptatum temporibus facilis soluta, repellendus quos!
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-heading8">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">
+                                    Məhsulumuzu satmaq üçün elan
+                                    yerləşdirə bilərik?
+                            </button>
+                            </h2>
+                            <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-heading8" data-bs-parent="#accordionFlushExample2">
+                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eum ab rerum illo accusamus voluptatum temporibus facilis soluta, repellendus quos!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4 item">
+                    <h1>Bizi izləyin</h1>
+                    <a href="" class=""><img src="../resources/img/linkedin-icon-2.svg" alt=""></a>
+                    <a href="" class=""><img src="../resources/img/instagram-2-1.svg" alt=""></a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4 item logo">
+                    <img onclick="location.href = 'index.html'" src="../resources/img/logo_footer.svg" alt="">
+                    <div>
+                        <small>Povered by Deirvlon Technologies</small>
+
+                    </div>
+                    <div>
+                        <a href="#">www.deirvlon.com</a>
+
+                    </div>
+                    <div>
+                        <small> Copyright © 2021 Deirvlon Technologies. All rights are reserved.</small>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4 item">
+                    <h1>
+                        Bizimlə əlaqə
+                    </h1>
+                    <small>
+                        <a href="mailto:salam@deirvlon.com">salam@deirvlon.com</a>
+                        <p><a href="tel:+994 55 639 49 54">+994 55 639 49 54</a></p>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../resources/js/tender.js"></script>
+
+</body>
+
+</html>

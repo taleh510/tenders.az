@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../resources/css/tenders.css">
+
+    <title>Tenderlər</title>
+</head>
+
+<body>
+
+    <section id="header">
+        <div class="container">
+            <div class="row">
+                <nav>
+                    <a href="../html/index.html"> <img src="../resources/img/tenders 1.png" alt="">
+                    </a>
+                    <ul class="nav-ul" id="nav-ul">
+                        <li class="addTender">
+                            <button type="button" class="btn _btn" data-bs-toggle="modal" onclick="location.href = 'addTender.html'" data-bs-target="#addTender"><i class="far fa-plus"></i> Tender əlavə et</button>
+                        </li>
+                        <li class="notifications">
+                            <button type="button" class="btn popoverBtn position-relative" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Lorem ipsum">
+                                <i class="far fa-bell fa-2x"></i>
+                                <span class="position-absolute translate-middle p-2 border border-light rounded-circle">
+                                </span>
+                            </button>
+                        </li>
+                        <li class="profil">
+                            <a href="../html/profil1.html">
+                                <img src="../resources/img/profil.svg" alt="">
+                                <p class="profilName">Nağı</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="nav2">
+                    <ul class="nav-list">
+                        <li class="nav-item1">
+                            <a href="../html/profil1.html">
+                                <img src="../resources/img/profil.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item2">
+                            <a href="../html/index.html" class="_logo"><img src="../resources/img/tenders 1.png" alt=""></a>
+                        </li>
+                        <li class="nav-item3">
+                            <!-- <div class="row">
+                                <button type="button" class="btn popoverBtn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Lorem ipsum">
+                                    <i class="far fa-bell fa-2x"></i>
+                                </button>
+                            </div> -->
+                            <button type="button" class="btn popoverBtn position-relative" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Lorem ipsum">
+                                <i class="far fa-bell fa-2x"></i>
+                                <span class="position-absolute translate-middle p-2 border border-light rounded-circle">
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="fixed-btn">
+                    <button type="button" class="btn _btn" data-bs-toggle="modal" onclick="location.href = 'addTender.html'" data-bs-target="#addTender"><i class="far fa-plus fa-2x"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="header-bottom">
+        <div class="container">
+            <div class="row mt-6">
+                <h2>Satınalma prosesini yenidən <br> kəşf etməyin vaxtıdır</h2>
+                <p>Sürətli və effektiv satınalmalar,<br>yeni əməkdaşlıqlar üçün Tenders.az-a gəlin!</p>
+                <div class="input-group mt-2 mb-3">
+                    <button class="btn _border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Kateqoriyalar</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Kateqoriyalar</a></li>
+                        <li><a class="dropdown-item" href="#">Kateqoriyalar</a></li>
+                        <li><a class="dropdown-item" href="#">Kateqoriyalar</a></li>
+                    </ul>
+                    <input type="text" class="form-control" placeholder="Tender axtar" aria-label="Text input with dropdown button">
+                    <button class="search">
+                        <i class="far fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="miniCards">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4 mini-col">
+                    <div class="card-item _card1">
+                        <div class="cardBody">
+                            <div class="row">
+                                <div class="col-lg-4 _img"> <img src="../resources/img/hammer (1).svg" alt="">
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="cardTitle">
+                                        <h5>Xidmət sifarişləri</h5>
+                                        <div class="active">
+                                            <small>Aktiv</small>
+                                            <small class="count1">1</small>
+                                        </div>
+                                        <div class="closed">
+                                            <small>Qapalı</small>
+                                            <small class="count2">12</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4 mini-col">
+                    <div class="card-item _card2">
+                        <div class="cardBody">
+                            <div class="row">
+                                <div class="col-lg-4 _img"> <img src="../resources/img/product.svg" alt="">
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="cardTitle">
+                                        <h5>Məhsul sifarişləri</h5>
+                                        <div class="active">
+                                            <small>Aktiv</small>
+                                            <small class="count1">1</small>
+                                        </div>
+                                        <div class="closed">
+                                            <small>Qapalı</small>
+                                            <small class="count2">12</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4 mini-col">
+                    <div class="card-item _card3">
+                        <div class="cardBody">
+                            <div class="row">
+                                <div class="col-lg-4 _img"> <img src="../resources/img/group.svg" alt="">
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="cardTitle">
+                                        <h5>İcraçılar</h5>
+                                        <div class="active">
+                                            <small>Aktiv</small>
+                                            <small class="count1">1</small>
+                                        </div>
+                                        <div class="closed">
+                                            <small>Qapalı</small>
+                                            <small class="count2">12</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="cardBox">
+        <div class="container">
+            <div class="row mt-6">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="card-item">
+                        <div class="cardTitle">
+                            <button type="button" class="btn  btn-sm"><i class="fas fa-crown"></i> Premium</button>
+                            <a href="../html/tender1.html">
+                                <h3>Kənd təsərrüfatında istifadə olunan xırdavat malların <br> alışı üçün tender elan edilir!</h3>
+                            </a>
+                        </div>
+                        <div class="cardFooter">
+                            <span>Təsərrüfat malları (yonca presləməlik üçün ip -1000 ədədlik) 200 cüt bel kürək kisə 60.000 və s. bu tipli mallar</span> </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="far fa-map-marker-alt"></i>    Baku</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-clock"></i>   Bir ay əvvəl</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-calendar-alt"></i>   20.2.2022-dək</small></p>
+                        </div>
+                        <div class="cardSubtitle _comment">
+                            <p class="card-text"><small class="text-muted">Kateqoriya:Elektrik maşınları, aparatları</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-6">
+                    <div class="card-item">
+                        <div class="cardTitle">
+                            <button type="button" class="btn  btn-sm"><i class="fas fa-crown"></i> Premium</button>
+                            <a href="../html/tender1.html">
+                                <h3>Kənd təsərrüfatında istifadə olunan xırdavat malların <br> alışı üçün tender elan edilir!</h3>
+                            </a>
+                        </div>
+                        <div class="cardFooter">
+                            <span>Təsərrüfat malları (yonca presləməlik üçün ip -1000 ədədlik) 200 cüt bel kürək kisə 60.000 və s. bu tipli mallar</span> </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="far fa-map-marker-alt"></i>    Baku</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-clock"></i>   Bir ay əvvəl</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-calendar-alt"></i>   20.2.2022-dək</small></p>
+                        </div>
+                        <div class="cardSubtitle _comment">
+                            <p class="card-text"><small class="text-muted">Kateqoriya:Elektrik maşınları, aparatları</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-6 ">
+                    <div class="card-item2">
+                        <div class="cardTitle">
+                            <a href="../html/tender1.html">
+                                <h3>Kənd təsərrüfatında istifadə olunan xırdavat malların <br> alışı üçün tender elan edilir!</h3>
+                            </a>
+                        </div>
+                        <div class="cardFooter">
+                            <span>Təsərrüfat malları (yonca presləməlik üçün ip -1000 ədədlik) 200 cüt bel kürək kisə 60.000 və s. bu tipli mallar</span> </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="far fa-map-marker-alt"></i>    Baku</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-clock"></i>   Bir ay əvvəl</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-calendar-alt"></i>   20.2.2022-dək</small></p>
+                        </div>
+                        <div class="cardSubtitle _comment">
+                            <p class="card-text"><small class="text-muted">Kateqoriya:Elektrik maşınları, aparatları</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-6 ">
+                    <div class="card-item2">
+                        <div class="cardTitle">
+                            <a href="../html/tender1.html">
+                                <h3>Kənd təsərrüfatında istifadə olunan xırdavat malların <br> alışı üçün tender elan edilir!</h3>
+                            </a>
+                        </div>
+                        <div class="cardFooter">
+                            <span>Təsərrüfat malları (yonca presləməlik üçün ip -1000 ədədlik) 200 cüt bel kürək kisə 60.000 və s. bu tipli mallar</span> </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="far fa-map-marker-alt"></i>    Baku</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-clock"></i>   Bir ay əvvəl</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-calendar-alt"></i>   20.2.2022-dək</small></p>
+                        </div>
+                        <div class="cardSubtitle _comment">
+                            <p class="card-text"><small class="text-muted">Kateqoriya:Elektrik maşınları, aparatları</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-6 ">
+                    <div class="card-item2">
+                        <div class="cardTitle">
+                            <a href="../html/tender1.html">
+                                <h3>Kənd təsərrüfatında istifadə olunan xırdavat malların <br> alışı üçün tender elan edilir!</h3>
+                            </a>
+                        </div>
+                        <div class="cardFooter">
+                            <span>Təsərrüfat malları (yonca presləməlik üçün ip -1000 ədədlik) 200 cüt bel kürək kisə 60.000 və s. bu tipli mallar</span> </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="far fa-map-marker-alt"></i>    Baku</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-clock"></i>   Bir ay əvvəl</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-calendar-alt"></i>   20.2.2022-dək</small></p>
+                        </div>
+                        <div class="cardSubtitle _comment">
+                            <p class="card-text"><small class="text-muted">Kateqoriya:Elektrik maşınları, aparatları</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-6 ">
+                    <div class="card-item2">
+                        <div class="cardTitle">
+                            <a href="../html/tender1.html">
+                                <h3>Kənd təsərrüfatında istifadə olunan xırdavat malların <br> alışı üçün tender elan edilir!</h3>
+                            </a>
+                        </div>
+                        <div class="cardFooter">
+                            <span>Təsərrüfat malları (yonca presləməlik üçün ip -1000 ədədlik) 200 cüt bel kürək kisə 60.000 və s. bu tipli mallar</span> </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="far fa-map-marker-alt"></i>    Baku</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-clock"></i>   Bir ay əvvəl</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-calendar-alt"></i>   20.2.2022-dək</small></p>
+                        </div>
+                        <div class="cardSubtitle _comment">
+                            <p class="card-text"><small class="text-muted">Kateqoriya:Elektrik maşınları, aparatları</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-6 ">
+                    <div class="card-item2">
+                        <div class="cardTitle">
+                            <a href="../html/tender1.html">
+                                <h3>Kənd təsərrüfatında istifadə olunan xırdavat malların <br> alışı üçün tender elan edilir!</h3>
+                            </a>
+                        </div>
+                        <div class="cardFooter">
+                            <span>Təsərrüfat malları (yonca presləməlik üçün ip -1000 ədədlik) 200 cüt bel kürək kisə 60.000 və s. bu tipli mallar</span> </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="far fa-map-marker-alt"></i>    Baku</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-clock"></i>   Bir ay əvvəl</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-calendar-alt"></i>   20.2.2022-dək</small></p>
+                        </div>
+                        <div class="cardSubtitle _comment">
+                            <p class="card-text"><small class="text-muted">Kateqoriya:Elektrik maşınları, aparatları</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-6 ">
+                    <div class="card-item2">
+                        <div class="cardTitle">
+                            <a href="../html/tender1.html">
+                                <h3>Kənd təsərrüfatında istifadə olunan xırdavat malların <br> alışı üçün tender elan edilir!</h3>
+                            </a>
+                        </div>
+                        <div class="cardFooter">
+                            <span>Təsərrüfat malları (yonca presləməlik üçün ip -1000 ədədlik) 200 cüt bel kürək kisə 60.000 və s. bu tipli mallar</span> </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="far fa-map-marker-alt"></i>    Baku</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-clock"></i>   Bir ay əvvəl</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-calendar-alt"></i>   20.2.2022-dək</small></p>
+                        </div>
+                        <div class="cardSubtitle _comment">
+                            <p class="card-text"><small class="text-muted">Kateqoriya:Elektrik maşınları, aparatları</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-6 ">
+                    <div class="card-item2">
+                        <div class="cardTitle">
+                            <a href="../html/tender1.html">
+                                <h3>Kənd təsərrüfatında istifadə olunan xırdavat malların <br> alışı üçün tender elan edilir!</h3>
+                            </a>
+                        </div>
+                        <div class="cardFooter">
+                            <span>Təsərrüfat malları (yonca presləməlik üçün ip -1000 ədədlik) 200 cüt bel kürək kisə 60.000 və s. bu tipli mallar</span> </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="far fa-map-marker-alt"></i>    Baku</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-clock"></i>   Bir ay əvvəl</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-calendar-alt"></i>   20.2.2022-dək</small></p>
+                        </div>
+                        <div class="cardSubtitle _comment">
+                            <p class="card-text"><small class="text-muted">Kateqoriya:Elektrik maşınları, aparatları</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-6 ">
+                    <div class="card-item2">
+                        <div class="cardTitle">
+                            <a href="../html/tender1.html">
+                                <h3>Kənd təsərrüfatında istifadə olunan xırdavat malların <br> alışı üçün tender elan edilir!</h3>
+                            </a>
+                        </div>
+                        <div class="cardFooter">
+                            <span>Təsərrüfat malları (yonca presləməlik üçün ip -1000 ədədlik) 200 cüt bel kürək kisə 60.000 və s. bu tipli mallar</span> </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="far fa-map-marker-alt"></i>    Baku</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-clock"></i>   Bir ay əvvəl</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-calendar-alt"></i>   20.2.2022-dək</small></p>
+                        </div>
+                        <div class="cardSubtitle _comment">
+                            <p class="card-text"><small class="text-muted">Kateqoriya:Elektrik maşınları, aparatları</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-6 ">
+                    <div class="card-item2">
+                        <div class="cardTitle">
+                            <a href="../html/tender1.html">
+                                <h3>Kənd təsərrüfatında istifadə olunan xırdavat malların <br> alışı üçün tender elan edilir!</h3>
+                            </a>
+                        </div>
+                        <div class="cardFooter">
+                            <span>Təsərrüfat malları (yonca presləməlik üçün ip -1000 ədədlik) 200 cüt bel kürək kisə 60.000 və s. bu tipli mallar</span> </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="far fa-map-marker-alt"></i>    Baku</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-clock"></i>   Bir ay əvvəl</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-calendar-alt"></i>   20.2.2022-dək</small></p>
+                        </div>
+                        <div class="cardSubtitle _comment">
+                            <p class="card-text"><small class="text-muted">Kateqoriya:Elektrik maşınları, aparatları</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 mt-6 ">
+                    <div class="card-item2">
+                        <div class="cardTitle">
+                            <a href="../html/tender1.html">
+                                <h3>Kənd təsərrüfatında istifadə olunan xırdavat malların <br> alışı üçün tender elan edilir!</h3>
+                            </a>
+                        </div>
+                        <div class="cardFooter">
+                            <span>Təsərrüfat malları (yonca presləməlik üçün ip -1000 ədədlik) 200 cüt bel kürək kisə 60.000 və s. bu tipli mallar</span> </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="far fa-map-marker-alt"></i>    Baku</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-clock"></i>   Bir ay əvvəl</small></p>
+                        </div>
+                        <div class="cardSubtitle">
+                            <p class="card-text"><small class="text-muted"> <i class="fal fa-calendar-alt"></i>   20.2.2022-dək</small></p>
+                        </div>
+                        <div class="cardSubtitle _comment">
+                            <p class="card-text"><small class="text-muted">Kateqoriya:Elektrik maşınları, aparatları</small></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4 item">
+                    <h1>Bizi izləyin</h1>
+                    <a href="" class=""><img src="../resources/img/linkedin-icon-2.svg" alt=""></a>
+                    <a href="" class=""><img src="../resources/img/instagram-2-1.svg" alt=""></a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4 item logo">
+                    <img src="../resources/img/logo_footer.svg" alt="">
+                    <div>
+                        <small>Povered by Deirvlon Technologies</small>
+
+                    </div>
+                    <div>
+                        <a href="#">www.deirvlon.com</a>
+
+                    </div>
+                    <div>
+                        <small> Copyright © 2021 Deirvlon Technologies. All rights are reserved.</small>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4 item">
+                    <h1>
+                        Bizimlə əlaqə
+                    </h1>
+                    <small>
+                        <a href="mailto:salam@deirvlon.com">salam@deirvlon.com</a>
+                        <p><a href="tel:+994 55 639 49 54">+994 55 639 49 54</a></p>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../resources/js/popover.js"></script>
+</body>
+
+</html>

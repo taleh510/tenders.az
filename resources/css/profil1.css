@@ -1,0 +1,542 @@
+:root {
+    --gradient: linear-gradient(90deg, #FB6263 -23.2%, #D22BA9 29.25%, #A227DC 84.3%, #7E58F1 122.53%);
+    --color: rgba(66, 0, 255, 1);
+    --color2: rgba(0, 0, 0, 1);
+    --color3: rgba(162, 39, 220, 1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, hsla(321, 53%, 93%, 1) 0%, hsla(264, 100%, 93%, 1) 100%);
+}
+
+.mt-6 {
+    margin-top: 50px;
+}
+
+
+/* header */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-ul.show {
+    margin-top: 5%;
+}
+
+.nav-ul.show li {
+    margin-top: 3%;
+}
+
+.nav-ul li {
+    margin: 0 15px;
+}
+
+.nav-ul li a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.addTender ._btn {
+    padding: 10px 30px;
+    box-shadow: none;
+    border-radius: 12px;
+    color: #fff;
+    background: var(--gradient);
+}
+
+.nav2 {
+    display: none;
+}
+
+nav .nav-list {
+    padding: 0 !important;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav .nav-list .nav-item3 img {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+nav .nav-list .nav-item1 img {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+nav .profil .dropdown-toggle::after,
+nav .nav-list .nav-item1 .dropdown-toggle::after {
+    display: none;
+}
+
+.fixed-btn {
+    display: none;
+}
+
+.fixed-btn button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--gradient);
+    color: #fff;
+    width: 80px;
+    height: auto;
+}
+
+.fixed-btn button i .fa-plus {
+    width: 50px;
+    height: 50px;
+}
+
+.container .row .popoverBtn:focus {
+    box-shadow: none;
+}
+
+
+/* nottification */
+
+.popover-body {
+    width: 400px;
+    height: 200px;
+}
+
+
+/* profil section */
+
+.profil img {
+    width: 30px;
+    height: auto;
+}
+
+.profil .profilName {
+    display: inline-block;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+#profile .prof-pic {
+    text-align: center;
+}
+
+#profile .profile-pic {
+    position: relative;
+    display: inline-block;
+}
+
+#profile .profile-pic img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 1px solid rgb(180, 9, 152);
+}
+
+#profile .edit-icon {
+    padding-top: 70%;
+    padding-right: 7px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#profile .edit-icon button {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(180, 9, 152);
+    background: #fff
+}
+
+#profile .edit-icon button:hover {
+    background-color: rgb(180, 9, 152);
+}
+
+#profile .edit-icon button:hover i {
+    color: #fff;
+}
+
+#profile .edit-icon button i {
+    color: rgb(180, 9, 152);
+    padding: 5px 1px;
+}
+
+#profile h2 {
+    font-weight: 600;
+}
+
+#profile p {
+    opacity: 70%;
+}
+
+
+/* buttons section */
+
+button {
+    box-shadow: none !important;
+}
+
+#button .btnDiv {
+    text-align: center;
+}
+
+.btn___ {
+    /* padding: 10px 20px; */
+    /* width: 47%; */
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 1px solid #c52bb9;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.button_ {
+    margin: 0;
+    position: relative;
+}
+
+.button_ label {
+    font-size: 20px;
+    padding: 5px 50px;
+}
+
+.button_ label,
+.button_ input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.button_ input[type="radio"] {
+    opacity: 0.011;
+    z-index: 100;
+}
+
+.button_ input[type="radio"]:checked+label {
+    color: #fff;
+    background-color: #c52bb9;
+    border-radius: 8px;
+}
+
+.button label {
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 90;
+    line-height: 1.8em;
+}
+
+
+/* cardbox section */
+
+#cardBox .last_tenders,
+#cardBox2 .last_tenders,
+#cardBox3 .last_tenders {
+    color: var(--color2);
+    opacity: 70%;
+}
+
+#cardBox .card-item2,
+#cardBox2 .card-item2,
+#cardBox3 .card-item2 {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding-top: 10%;
+    width: 100%;
+    height: auto;
+    padding: 30px 30px 10px 30px;
+    border-radius: 20px;
+}
+
+#cardBox .cardTitle a,
+#cardBox2 .cardTitle a,
+#cardBox3 .cardTitle a {
+    text-decoration: none;
+    color: #000;
+}
+
+#cardBox .card-item2 .cardTitle h3,
+#cardBox2 .card-item2 .cardTitle h3,
+#cardBox3 .card-item2 .cardTitle h3 {
+    padding-top: 2%;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#cardBox .card-item2 .cardFooter span,
+#cardBox .card-item2 .cardFooter span,
+#cardBox .card-item2 .cardFooter span {
+    color: var(--color2);
+    opacity: 70%;
+    font-size: 19px;
+}
+
+#cardBox .card-item2 .cardSubtitle {
+    display: inline-block;
+    margin: 1% 3% 1% 0;
+}
+
+#cardBox .card-item2 ._comment {
+    margin-left: 36%;
+}
+
+
+/* footer */
+
+footer {
+    margin-top: 250px;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, hsla(322, 63%, 62%, 1) 0%, hsla(275, 69%, 63%, 1) 100%);
+}
+
+footer a img {
+    height: 30px;
+    width: 30px;
+    left: 0px;
+    padding: 0 1%;
+}
+
+footer h1 {
+    padding-top: 10%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+footer .item {
+    padding: 0 1%;
+    margin: 4% 0;
+    text-align: center;
+    color: white;
+}
+
+footer .logo img {
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+
+footer .item div {
+    margin-bottom: 1%;
+}
+
+footer .item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* edit profile html start */
+
+.prof-img {
+    display: flex;
+    align-items: center;
+}
+
+.prof-img p {
+    opacity: 70%;
+}
+
+.prof-img .bio {
+    padding-left: 4%;
+}
+
+.profile-pic {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pic img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 1px solid rgb(180, 9, 152);
+}
+
+.edit-icon {
+    padding-top: 70%;
+    padding-right: 7px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.edit-icon button {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(180, 9, 152);
+    background: #fff
+}
+
+.edit-icon button:hover {
+    background-color: rgb(180, 9, 152);
+}
+
+.edit-icon button:hover i {
+    color: #fff;
+}
+
+.edit-icon button i {
+    color: rgb(180, 9, 152);
+    padding: 5px 1px;
+}
+
+.formGroup input {
+    border-radius: 8px;
+}
+
+.btn-diff input {
+    display: flex;
+}
+
+.button {
+    margin: 0 5px 0 0;
+    width: 80%;
+    height: 60px;
+    position: relative;
+}
+
+.button label,
+.button input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.button input[type="radio"] {
+    opacity: 0.011;
+    z-index: 100;
+}
+
+.button input[type="radio"]:checked+label {
+    background: #fff;
+    border-left: 5px solid #c52bb9;
+    border-radius: 8px;
+}
+
+.button label {
+    cursor: pointer;
+    z-index: 90;
+    line-height: 1.8em;
+}
+
+
+/* edit profil html end */
+
+@media (max-width:992px) {
+    ._logo img {
+        width: 200px;
+    }
+    nav {
+        display: none;
+    }
+    .nav2 {
+        display: block;
+    }
+    .container .row .popoverBtn i {
+        margin-top: 20px;
+    }
+    .fixed-btn {
+        display: block;
+    }
+    .prof-content h2 {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .prof-content p {
+        text-align: center;
+    }
+    .prof-content span {
+        text-align: center;
+    }
+    #cardBox .card-item2 .cardTitle h3 {
+        font-size: 22px;
+    }
+    #cardBox .card-item2 .cardFooter span {
+        font-size: 16px;
+    }
+    #cardBox .card-item2 ._comment {
+        margin-left: 0;
+    }
+    #cardBox .card-item2 {
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+    footer .logo img {
+        width: 100%;
+        height: auto;
+    }
+    footer .item small {
+        font-size: 11px;
+    }
+    footer .item a {
+        font-size: 10px;
+    }
+    footer h1 {
+        font-size: 22px;
+    }
+    footer a img {
+        height: 22px;
+        width: 22px;
+    }
+    #prof-edit .prof-btns button,
+    #acc-edit .prof-btns button,
+    #comp-edit .prof-btns button {
+        width: 100%;
+    }
+    .button label {
+        font-size: 13px;
+    }
+    .formGroup input {
+        font-size: 13px;
+    }
+    .prof-img .bio {
+        display: none;
+    }
+    .button_ label {
+        font-size: 18px;
+        padding: 5px 30px;
+    }
+}
+
+@media (max-width:768px) {
+    #cardBox .card-item2 .cardTitle h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:539px) {
+    #prof-edit .prof-btns button,
+    #acc-edit .prof-btns button,
+    #comp-edit .prof-btns button {
+        width: 100%;
+        font-size: 12px;
+    }
+    .button_ label {
+        font-size: 13px;
+        padding: 5px 11px;
+    }
+}
